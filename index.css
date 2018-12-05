@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#gameBoard {
+    position: absolute;
+}
+
+#controls {
+    position: absolute;
+    padding: 20px;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-color: gainsboro;
+    border-bottom-width: 2px;
+}
+
+#controls button {
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #999;
+    font-weight: bold;
+    font-size: 1em;
+    display: inline-block;
+}
+
+#speedDiv, #zoomDiv {
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+#speedVal {
+    font-weight: bold;
+}
+
+h3,p {
+    display: inline-block;
+}

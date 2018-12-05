@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belmar Game of Life</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <canvas id="gameBoard"></canvas>
+        <div id="controls">
+            <button id="clearButton" onclick="clearGame()">Clear</button>
+            <button id="startButton" onclick="startGame()">Start</button>
+            <button id="stopButton" onclick="stopGame()">Stop</button>
+            <button id="nextButton" onclick="makeMove()">Next</button>
+            <div id="zoomDiv">
+                <h3>Zoom: </h3>
+                <button id="zoomInButton" onclick="zoomIn()">+</button>
+                <button id="zoomOutButton" onclick="zoomOut()">-</button>
+            </div>
+            <div id="speedDiv">
+                <h3>Speed:</h3>
+                <input type="range" id="speedSlider" oninput="changeSpeedP()">
+                <p id="speedP"><p id="speedVal">1.5</p> seconds</p>
+            </div>
+        </div>
+        <script src="functions.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
